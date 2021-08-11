@@ -1,5 +1,6 @@
 # fish-wakatime
 
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/kama-meshi/fish-wakatime)
 ![GitHub](https://img.shields.io/github/license/kama-meshi/fish-wakatime)
 
 [fish](https://fishshell.com/) plugin for [WakaTime](https://wakatime.com/)  

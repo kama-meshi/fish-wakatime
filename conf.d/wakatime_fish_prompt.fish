@@ -3,6 +3,9 @@
 # See:
 # https://github.com/kama-meshi/fish-wakatime
 
+# Plugin version:
+set -g FISH_WAKATIME_VERSION "1.0.0"
+
 function wakatime_fish_prompt -e fish_preexec
     set -l entity (string replace -ra '\n' ' ; ' $history[1] | cut -d ' ' -f1)
     if test -z "$entity"
@@ -17,7 +20,7 @@ function wakatime_fish_prompt -e fish_preexec
     end
 
     wakatime --write \
-        --plugin "fish-wakatime/0.0.1" \
+        --plugin "fish-wakatime/$FISH_WAKATIME_VERSION" \
         --entity-type app \
         --project "$project" \
         --entity $entity \
